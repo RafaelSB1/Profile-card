@@ -1,0 +1,258 @@
+body {
+  min-height: 100vh;
+  margin: 10px;
+  background-color: #23252C;
+  font-family: "Inter", sans-serif;
+}
+
+/* Container que envolve o card e o painel de e-mail */
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0;
+  min-height: 100vh;
+  transition: all 0.4s ease-in-out;
+}
+
+.container.active {
+  gap: 20px;
+}
+
+.card {
+  width: 317px;
+  height: 780px;
+  border-radius: 10px;  
+  background-color: #1A1B21;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+  transition: transform 0.4s ease-in-out;
+}
+
+header {
+  text-align: center;
+}
+
+.profile-image {
+  width: 317px;
+  border-radius: 10px 10px 0px 0px;
+}
+
+.name-text {
+  color: white;
+  padding: 3px;
+  margin: 20px 0 0 0;
+  font-size: 30px;
+}
+
+.ocupation-text {
+  color: #F3BF99;
+  padding: 3px;
+  margin: 0;
+  font-size: 17px;
+}
+
+.link-text {
+  color: white;
+  font-size: 12px;
+  padding: 5px 0 5px 0;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+main {
+  padding: 10px 35px;
+  margin: 5px;
+}
+
+.subtitle {
+  color: white;
+  font-size: 17px;
+  padding-bottom: 5px;
+  padding-top: 10px;
+  margin: 0;
+}
+
+.normal-text {
+  color: white;
+  font-size: 11px;
+  padding-bottom: 10px;
+  margin: 0;
+}
+
+.buttons-space {
+  display: flex;
+  justify-content: center;
+}
+
+.email-button {
+  border-radius: 8px;
+  width: 110px;
+  height: 34px;
+  margin: 11px 9px 5px 9px;
+  background-color: white;
+  font-size: 14px;
+  color: #374151;
+  border: none;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.email-button:hover {
+  background-color: #ececec;
+}
+
+.linkedin-button {
+  border-radius: 8px;
+  width: 110px;
+  height: 34px;
+  margin: 11px 9px 5px 9px;
+  background-color: #5093E2;
+  border: none;
+  font-size: 14px;
+  color: #FFFFFF;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.linkedin-button:hover {
+  background-color: #4588d5;
+}
+
+.icon {
+  padding-right: 8px;
+}
+
+footer {
+  width: 100%;
+  height: 64px;
+  background-color: #161619;
+  border-radius: 0 0 10px 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-icon {
+  font-size: 16px;
+  color: #161619;
+}
+
+footer a {
+  width: 25px;
+  height: 25px;
+  margin-inline: 12px;
+  background-color: #918E9B;
+  border-radius: 3px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+}
+
+/* PAINEL ESTILO GMAIL */
+.email-panel {
+  width: 0;
+  height: 400px;
+  background-color: #f2f6fc;
+  border-radius: 8px;
+  overflow: hidden;
+  opacity: 0;
+  visibility: hidden;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+  display: flex;
+  flex-direction: column;
+  transition: all 0.4s ease-in-out;
+  color: #333;
+}
+
+.email-panel.open {
+  width: 340px;
+  opacity: 1;
+  visibility: visible;
+}
+
+.gmail-header {
+  background-color: #eaf1fb;
+  padding: 10px 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: bold;
+  font-size: 0.9rem;
+  color: #041e49;
+  border-bottom: 1px solid #dcdcdc;
+}
+
+.close-btn {
+  background: none;
+  border: none;
+  font-size: 1.2rem;
+  cursor: pointer;
+  color: #5f6368;
+}
+
+.gmail-form {
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  gap: 10px;
+}
+
+.gmail-form input, 
+.gmail-form textarea {
+  width: 100%;
+  border: none;
+  border-bottom: 1px solid #e0e0e0;
+  background: transparent;
+  padding: 8px 4px;
+  font-family: inherit;
+  font-size: 0.85rem;
+  outline: none;
+}
+
+.gmail-form input:focus, 
+.gmail-form textarea:focus {
+  border-bottom: 2px solid #1a73e8;
+}
+
+.gmail-form textarea {
+  resize: none;
+}
+
+.gmail-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: auto;
+}
+
+.send-btn {
+  background-color: #0b57d0;
+  color: white;
+  border: none;
+  padding: 8px 20px;
+  border-radius: 18px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.send-btn:hover {
+  background-color: #0842a0;
+}
+
+.status-msg {
+  font-size: 0.75rem;
+  color: #1e8e3e;
+}
