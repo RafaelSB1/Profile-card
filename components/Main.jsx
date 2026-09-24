@@ -1,52 +1,10 @@
-// export default function Main() {
-//     return(
-//         <>
-//         <header>
-//             <section>
-//                 <img src="..\profile.jfif" className="profile-image"/>
-//                 <h2 className="name-text">Rafael Barbosa</h2>
-//                 <p className="ocupation-text">Engenheiro Químico</p>
-//                 <a href=""><p className="link-text">http://localhost:5173/</p></a>
-//             </section>
-//             <section className="buttons-space">
-//                 <button className="email-button" onClick={BusinessCard}>
-//                     <i className="fa-solid fa-envelope icon"></i>
-//                     <span>Email</span>
-//                 </button>
-//                 <button className="linkedin-button">
-//                     <i className="fa-brands fa-linkedin icon"></i>
-//                     <span>LinkedIn</span>
-//                 </button>
-//             </section>
-//         </header>
-//         <main>
-//             <div>
-//                 <h5 className="subtitle">Sobre</h5>
-//                 <p className="normal-text">
-//                     Sou Engenheiro químico e atualmente estou aprendendo
-//                     desenvolvimento web e automatizações com Python. Este é um exemplo
-//                     de código realizado durante meus aprendizados.
-//                 </p>
-//             </div>
-//             <div>
-//                 <h5 className="subtitle">Interesses</h5>
-//                 <p className="normal-text">
-//                     Fanático por café, apaixonado por música, instrumentista,
-//                     consumidor de vídeos do Youtube, caminhadas no fim da tarde.
-//                 </p>
-//             </div>
-
-//         </main>
-//         </>
-//     )
-// };
-
+import profileImg from "../profile.png";
 export default function Main({ onToggleEmail, isEmailOpen }) {
   return (
     <>
       <header>
         <section>
-          <img src="./profile.png" className="profile-image" alt="Profile" />
+          <img src={profileImg} className="profile-image" alt="Profile" />
           <h2 className="name-text">Rafael Barbosa</h2>
           <p className="ocupation-text">Engenheiro Químico</p>
           <a href="http://localhost:5173/">
