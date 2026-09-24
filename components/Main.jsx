@@ -1,4 +1,4 @@
-import profileImg from "../profile.png";
+import profileImg from "/profile.png";
 export default function Main({ onToggleEmail, isEmailOpen }) {
   return (
     <>
