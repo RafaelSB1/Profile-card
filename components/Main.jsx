@@ -46,7 +46,7 @@ export default function Main({ onToggleEmail, isEmailOpen }) {
     <>
       <header>
         <section>
-          <img src="../profile.jfif" className="profile-image" alt="Profile" />
+          <img src="./profile.jfif" className="profile-image" alt="Profile" />
           <h2 className="name-text">Rafael Barbosa</h2>
           <p className="ocupation-text">Engenheiro Químico</p>
           <a href="http://localhost:5173/">
